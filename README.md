@@ -45,3 +45,31 @@ La data que se puede obtener de cada modelo, variará según el modelo y será l
 - Waste Toner Bottle
 - Fuser
 
+## Supply status levels
+En la lectura de los outputs, aparecerán los estatus de las unidades de cada impresora. En muchas ocasiones, no se mostrará un número exacto, sino que se mostrará un mensaje de estatus como "Low" o "Replace". Esto servirá posteriormente para procesar la data y determinar qué impresoras requieren atención. Actualmente solo se tendrá el código para generar un output de tipo Excel para leer la información de cada impresora. El proyecto final buscará mostrar solo las impresoras que requieran atención debido al bajo nivel de cartucho, kit de mantenimiento u otros, según corresponda.
+
+Los ejemplos de nivel de estatus son los siguientes:
+### Black Cartridge
+| Status      | Level    | Behavior  |
+| ---------- | -- | ---------------- |
+| Nearly Low | 30 | None             |
+| Low        | 20 | Warning          |
+| Very Low   |  7 | No changes       |
+| Replace    |    | Continuable stop |
+
+### Black Imaging Unit
+| Status      | Level    | Behavior  |
+| ---------- | -- | ---------------- |
+| Nearly Low | 10 | None             |
+| Low        |  5 | Warning          |
+| Very Low   |  1 | No changes       |
+| Replace    |    | Continuable stop |
+
+### Maintance Kit Information
+| Status    | Level |   Behavior     |
+| ---------- | -- | ---------------- |
+| Nearly Low | 10 | None             |
+| Low        |  5 | Warning          |
+| Very Low   |  1 | No changes       |
+| Replace    |    | Continuable stop |
+
