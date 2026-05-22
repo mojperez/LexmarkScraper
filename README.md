@@ -19,7 +19,7 @@ La data que se puede obtener de cada modelo, variará según el modelo y será l
 - Black Imaging Unit
 - Maintenance Kit Information
 
-### CX532ADWE
+### CX532adwe
 - Cyan Cartridge
 - Magenta Cartridge
 - Yellow Cartridge
@@ -28,7 +28,7 @@ La data que se puede obtener de cada modelo, variará según el modelo y será l
 - Maintenance Kit Information
 - Waste Toner Bottle
 
-### CX922DE
+### CX922de
 - Cyan Cartridge
 - Magenta Cartridge
 - Yellow Cartridge
